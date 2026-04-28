@@ -1,0 +1,8 @@
+Pillow>=11.0.0
+ebooklib>=0.19
+ocrmypdf>=17.3.0
+pypdf>=6.9.1
+PyQt6>=6.10.0
+python-docx>=1.2.0
+reportlab>=4.4.10
+selenium>=4.26.0
