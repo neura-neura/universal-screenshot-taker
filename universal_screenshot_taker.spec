@@ -1,6 +1,6 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-from PyInstaller.utils.hooks import collect_data_files, collect_dynamic_libs
+from PyInstaller.utils.hooks import collect_data_files, collect_dynamic_libs, collect_submodules
 
 
 hiddenimports = [
@@ -9,6 +9,10 @@ hiddenimports = [
     "ebooklib",
     "ebooklib.epub",
 ]
+hiddenimports += collect_submodules("selenium.webdriver.edge")
+hiddenimports += collect_submodules("selenium.webdriver.chrome")
+hiddenimports += collect_submodules("selenium.webdriver.common")
+hiddenimports += collect_submodules("selenium.webdriver.remote")
 datas = []
 binaries = []
 
